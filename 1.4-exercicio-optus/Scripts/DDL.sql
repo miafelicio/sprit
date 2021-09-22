@@ -14,7 +14,8 @@ CREATE TABLE ALBUM(
     idAlbum INT PRIMARY KEY IDENTITY,
 	idArtista INT FOREIGN KEY REFERENCES ARTISTA(idArtista),
 	tituloAlbum VARCHAR(100) NOT NULL,
-	dataLancamento DATE
+	dataLancamento DATE,
+	ativo bit
 );
 GO
 
