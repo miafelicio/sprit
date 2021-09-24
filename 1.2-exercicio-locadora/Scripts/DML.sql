@@ -31,7 +31,7 @@ VALUES
 ('bruno vemdezap', '11978543267')
 GO
 
-INSERT INTO ALUGUEL(dataInicio, dataFim, )
+INSERT INTO ALUGUEL(dataInicio, dataFim)
 VALUES
 ('21/09/21', '21/11/21'),
 ('21/09/21', '21/11/21')
