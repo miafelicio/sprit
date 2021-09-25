@@ -18,3 +18,5 @@ GO
 
 SELECT * FROM ALUGUEL;
 GO
+
+
