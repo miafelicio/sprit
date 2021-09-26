@@ -19,4 +19,20 @@ GO
 SELECT * FROM ALUGUEL;
 GO
 
+SELECT valorAluguel, dataInicio, dataFim, nomeCliente, descricaoModelo, placaVeiculo, nomeEmpresa FROM ALUGUEL
+LEFT JOIN CLIENTE
+ON ALUGUEL.idCliente = CLIENTE.idCliente
+LEFT JOIN VEICULOS
+ON ALUGUEL.idVeiculos = VEICULOS.idVeiculos
+LEFT JOIN MODELO
+ON MODELO.idModelo = VEICULOS.idModelo
+LEFT JOIN MARCA
+ON MARCA.idMarca = MODELO.idMarca
+LEFT JOIN EMPRESAS
+ON EMPRESAS.idEmpresas = VEICULOS.idVeiculos
 
+SELECT nomeMarca, descricaoModelo, placaVeiculo FROM VEICULOS
+LEFT JOIN MODELO
+ON MODELO.idModelo = VEICULOS.idModelo
+LEFT JOIN MARCA
+ON MARCA.idMarca = MODELO.idMarca

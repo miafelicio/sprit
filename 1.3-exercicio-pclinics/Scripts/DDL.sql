@@ -56,3 +56,4 @@ CREATE TABLE ATENDIMENTOS(
 	dataAtendimento DATE
 );
 GO
+

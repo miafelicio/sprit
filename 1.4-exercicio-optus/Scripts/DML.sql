@@ -34,6 +34,6 @@ GO
 
 INSERT INTO USUARIO(nomeUsuario, emailUsuario, senhaUsuario, permissao)
 VALUES
-('astolfo', 'astolfinhogameplay12@gmail.com', 'mufshnfhydsnf', 'não'),
-('amanda', 'amandinhalinda@gmail.com', 'i6o78otgu', 'sim')
+('astolfo', 'astolfinhogameplay12@gmail.com', 'mufshnfhydsnf', 0),
+('amanda', 'amandinhalinda@gmail.com', 'i6o78otgu', 1)
 GO

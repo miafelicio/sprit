@@ -14,3 +14,21 @@ SELECT *FROM RACA
 SELECT *FROM PETS
 
 SELECT *FROM ATENDIMENTOS
+
+SELECT nomePet, dataNascimento, descricaoTipo, nomeRaca, nomeDono FROM PETS
+LEFT JOIN RACA
+ON PETS.idRaca = RACA.idRaca
+LEFT JOIN TIPO_PET
+ON RACA.idTipoPet = TIPO_PET.idTipoPet
+LEFT JOIN DONO
+ON  PETS.idDono = DONO.idDono
+
+SELECT nomeVeterinario, nomePet, descricaoTipo, nomeRaca, descricaoAtendimento, dataAtendimento  FROM ATENDIMENTOS
+LEFT JOIN VETERINARIO
+ON VETERINARIO.idVeterinario = ATENDIMENTOS.idVeterinario
+LEFT JOIN PETS
+ON PETS.idPets = ATENDIMENTOS.idPets
+LEFT JOIN RACA
+ON RACA.idRaca = PETS.idRaca
+LEFT JOIN TIPO_PET
+ON TIPO_PET.idTipoPet = RACA.idTipoPet

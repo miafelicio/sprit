@@ -36,6 +36,6 @@ CREATE TABLE USUARIO(
 	nomeUsuario VARCHAR(50) NOT NULL,
 	emailUsuario VARCHAR(200) NOT NULL UNIQUE,
 	senhaUsuario VARCHAR(50) NOT NULL,
-	permissao VARCHAR(100) NOT NULL
+	permissao bit 
 );
 GO
